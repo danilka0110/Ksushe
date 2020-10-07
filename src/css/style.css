@@ -1,0 +1,243 @@
+body {
+    background: #000 url(../img/1.jpg);
+    /* Фоновый цвет и фоновый рисунок*/
+    background-attachment: fixed;
+    /* Фон страницы фиксируется */
+    background-repeat: repeat;
+    /* Изображение повторяется по горизонтали */
+    /* Изображение повторяется по вертикали */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+    background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+}
+
+.navbar {
+    height: 55px;
+    background-image: url(../img/prov.jpg);
+    background-size: 3px;
+    border: none;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.cont-head {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.cat-choice {
+    font-size: 24px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.header-btn {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: red;
+}
+.navbar-default .navbar-brand:hover {
+    color: red;
+}
+.siteName {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Comic Sans MS";
+}
+
+.siteName a {
+    text-decoration: none;
+    color: blue;
+}
+
+.logo {
+    width: 35%;
+    height: 35%;
+}
+
+#siteNameFirst {
+    color: #000;
+}
+
+#siteNameSecond {
+    color: #000;
+}
+
+.footer {
+    background-color: #242427;
+    color: #ffffff;
+}
+
+
+.footer a {
+    color: #ffffff;
+}
+
+.cont {
+    width: 100px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.contentImg {
+    width: 100%;
+    height: 200px;
+}
+
+.postName {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.postText {
+    margin-bottom: 30px;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.details {
+    border: 1px solid #CD5C5C;
+    padding: 10px;
+    color: #CD5C5C;
+}
+
+.date {
+    margin-left: 10px;
+    color: #808080;
+}
+
+.category {
+    color: #CD5C5C;
+    text-transform: uppercase;
+}
+
+.header {
+    height: 70px;
+    background-color: #FAF0E6;
+}
+
+.category-list {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.category-list a {
+    list-style-type: none;
+    display: inline;
+    padding: 40px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.category-list a:focus {
+    color: blue;
+    font-size: 22px;
+}
+
+.content>.container {
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.content>.container {
+    background-color: #FAF0E6;
+}
+
+.container {
+    width: 1000px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px #555;
+    margin-bottom: 70px;
+    float: left;
+}
+
+
+
+.box img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease 0s;
+}
+
+.box:hover img {
+    opacity: 0.3;
+}
+
+.box .boxContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 4px solid rgba(255, 255, 255, 0.10);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+
+.box:hover .boxContent {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.box .title {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    line-height: 45px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+}
+
+.box .post {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 8px 0 15px;
+}
+
+@media only screen and (max-width: 990px) {
+    .box {
+        margin-bottom: 20px;
+    }
+}
